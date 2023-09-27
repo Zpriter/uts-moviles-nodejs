@@ -5,7 +5,7 @@ import cors from 'cors';
 //aca importamos las rutas que creamos en la carpeta routers
 const app = express();
 app.use(cors({ origin: '*' }));
-app.use(express.json());
+app.use(express.json()); //los datos me llegan en json 
 //app.listen(3000);
 ////////////////////////////////////////////////////////////////////////////////////////
 app.use('/api', productosRoutes); // acá le decimos al servidor que ruta usar 
